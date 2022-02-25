@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#discover"><li>Discover</li></a>
+        <a href="#contact"><li>Contact us</li></a>
+      </ul>
+    </header>
+
+    <div id="discover">
+      <h1>Discover Our New Technologies</h1>
+      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore</h3>
+      <img src="https://preview.uideck.com/items/basic/assets/images/header-hero.png" alt="discover laptop" />
+    </div>
+
+    <div id="discover">
+      <button id="showText">Show text</button>
+      <p id="text">I'm hidden Text ..</p>
+    </div>
+
+    <div class="div2">
+      <h2>Technologies Examples</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Libraries</td>
+            <td>Popularity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>React JS</td>
+            <td>
+              <ol>
+                <li>React</li>
+                <li>Ant Design</li>
+                <li>Redux</li>
+                <li>Router</li>
+              </ol>
+            </td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>
+              <ol>
+                <li>PChart</li>
+                <li>PHP CAPTCHA</li>
+                <li>Dispatch</li>
+              </ol>
+            </td>
+            <td>90%</td>
+          </tr>
+          <tr>
+            <td>Node JS</td>
+            <td>
+              <ol>
+                <li>Request</li>
+                <li>Morgan</li>
+                <li>Async.js</li>
+              </ol>
+            </td>
+            <td>95%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="contact">✉️ Leave a Message</h2>
+    <form  name = "myForm" onsubmit = "return(validate());">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name" name="name" pattern="[a-zA-Z\s]+" title="Only alphabatic allowed" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email" name="email" />
+      </div>
+
+      <div>
+        <br />
+        <label class="form-label" for="message">Message</label><br />
+        <textarea id="message" rows="4" placeholder="Enter message" minlength="8" name="message"></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <footer>
+      <p>© Copyright 2022 Tamkeentech.sa</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
